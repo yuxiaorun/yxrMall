@@ -4,6 +4,15 @@ A shopping mall demo based on vuetify(UI), vuejs(frontend), nodejs(backend), mon
 partly refers to the course: https://coding.imooc.com/class/113.html <br>
 Online presentation: http://149.129.106.231/
 
+### Feature:
+1. Responsive design: two layouts designed for computers and mobiles.
+2. dynamic loading: the goods list will load new items until you reach the end of the page.
+3. Functions:  
+  * account system: register and login, logout.
+  * information management: view history orders, manage addresses.
+  * goods information: goods list, goods details, goods sort and filter.
+  * purchase system: cart list and checkout.
+  
 ## Build Setup
 
 ``` bash
