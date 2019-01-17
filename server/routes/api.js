@@ -7,7 +7,7 @@ var Users=require('../models/users');
 var Address=require('../models/address');
 var Orders=require('../models/orders');
 
-mongoose.connect('mongodb://yuxiaorun:134679Yu@127.0.0.1:27017/mall_demo',{ useNewUrlParser: true });
+mongoose.connect('mongodb://yuxiaorun:@127.0.0.1:27017/mall_demo?authSource:admin',{ useNewUrlParser: true });
 
 mongoose.connection.on("connected",()=>{
   console.log("connect success.");
