@@ -1,6 +1,6 @@
 # yxrmall
 
-> A shopping mall demo based on vuetify(UI), vuejs(frontend), nodejs(backend), mongodb. only for learning.
+A shopping mall demo based on vuetify(UI), vuejs(frontend), nodejs(backend), mongodb. only for learning.
 partly refers to the course: https://coding.imooc.com/class/113.html
 
 ## Build Setup
