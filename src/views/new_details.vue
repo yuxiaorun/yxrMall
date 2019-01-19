@@ -22,7 +22,7 @@
             <v-layout row wrap>
               <v-flex xs12 v-for="i in 5">
                 <v-card hover style="height: 90px; width: 60px" @click="imgIndex=i">
-                  <v-img v-bind:src="'../../static/img/'+good.productid+'/'+i+'.jpg'"
+                  <v-img v-if="good" v-bind:src="'../../static/img/'+good.productid+'/'+i+'.jpg'"
                   ></v-img>
                 </v-card>
               </v-flex>
@@ -33,7 +33,7 @@
           </v-flex>
           <v-flex xs4>
             <v-card flat >
-              <v-img v-bind:src="'../../static/img/'+good.productid+'/'+imgIndex+'.jpg'"
+              <v-img v-if="good" v-bind:src="'../../static/img/'+good.productid+'/'+imgIndex+'.jpg'"
               ></v-img>
             </v-card>
           </v-flex>
@@ -43,11 +43,11 @@
           <v-flex xs4>
             <v-layout row wrap>
               <v-flex xs12>
-            <h2> {{good.name}}<br></h2>
+            <h2 v-if="good"> {{good.name}}<br></h2>
               </v-flex>
 
-            <div class="font-weight-bold"><br>${{good.price}}</div>
-            <div class="font-weight-thin"><br>{{good.descr}}
+            <div v-if="good" class="font-weight-bold"><br>${{good.price}}</div>
+            <div v-if="good" class="font-weight-thin"><br>{{good.descr}}
             </div>
             <div style="height: 100px"></div>
               <v-flex xs12>
@@ -81,7 +81,7 @@
   import axios from "axios"
   import Cookies from "js-cookie"
     export default {
-        name: "details",
+        name: "my_details",
       data(){
         return {
           breadcrumbItems:[{
