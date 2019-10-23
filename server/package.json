@@ -12,7 +12,7 @@
     "http-errors": "~1.6.2",
     "jade": "~1.11.0",
     "loading-svg": "^1.0.0",
-    "mongoose": "^5.4.2",
+    "mongoose": "^5.7.5",
     "morgan": "~1.9.0",
     "vue-infinite-scroll": "^2.0.2"
   }
