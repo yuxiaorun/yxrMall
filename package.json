@@ -10,7 +10,7 @@
     "start": "npm run dev"
   },
   "dependencies": {
-    "ajv": "^6.6.2",
+    "ajv": "^6.12.3",
     "axios": "^0.18.0",
     "element-ui": "^2.4.11",
     "js-cookie": "^2.2.0",
